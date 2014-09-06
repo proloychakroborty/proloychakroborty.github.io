@@ -1,4 +1,4 @@
-proloychakroborty.github.io
+Proloy Chakroborty
 ===========================
 
-Proloy Chakroborty
+This is my resume site

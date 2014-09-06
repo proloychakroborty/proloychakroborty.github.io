@@ -1,0 +1,11 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /BingSiteAuth.xml
+Disallow: /googlea056e5cbfb9b75c5.html
+
+Sitemap: http://proloy.chakroborty.com/sitemap.xml

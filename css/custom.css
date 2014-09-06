@@ -1,0 +1,312 @@
+/*---------- BEGIN << Font Face ----------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:400,300,300italic,600|Raleway:600,500,400);
+@font-face {
+	font-family: 'social-icon';
+	src:url('fonts/social-icon.eot');
+	src:url('fonts/social-icon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/social-icon.woff') format('woff'),
+		url('fonts/social-icon.ttf') format('truetype'),
+		url('fonts/social-icon.svg#social-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*----------- END >> Font Face -----------*/
+
+/*---------- BEGIN << Icons ----------*/
+.socialicon-tumblr, .socialicon-linkedin, .socialicon-twitter, .socialicon-facebook, .socialicon-pinterest, .socialicon-blogger, .socialicon-youtube, .socialicon-vimeo, .socialicon-google-plus, .socialicon-flickr, .socialicon-briefcase, .socialicon-address-book, .socialicon-profile, .socialicon-html5, .socialicon-css3, .socialicon-box-add, .socialicon-mobile, .socialicon-mail, .socialicon-skype, .socialicon-location, .socialicon-wordpress, .socialicon-blog, .socialicon-feed { font-family: 'social-icon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
+.socialicon-tumblr:before { content: "\21"; }
+.socialicon-linkedin:before { content: "\22"; }
+.socialicon-twitter:before { content: "\23"; }
+.socialicon-facebook:before { content: "\24"; }
+.socialicon-pinterest:before { content: "\25"; }
+.socialicon-blogger:before { content: "\26"; }
+.socialicon-youtube:before { content: "\27"; }
+.socialicon-vimeo:before { content: "\28"; }
+.socialicon-google-plus:before { content: "\29"; }
+.socialicon-flickr:before { content: "\2a"; }
+.socialicon-briefcase:before { content: "\2b"; }
+.socialicon-address-book:before { content: "\2c"; }
+.socialicon-profile:before { content: "\2d"; }
+.socialicon-html5:before { content: "\2e"; }
+.socialicon-css3:before { content: "\2f"; }
+.socialicon-box-add:before { content: "\30"; }
+.socialicon-mobile:before { content: "\31"; }
+.socialicon-mail:before { content: "\32"; }
+.socialicon-skype:before { content: "\33"; }
+.socialicon-location:before { content: "\34"; }
+.socialicon-wordpress:before { content: "\35"; }
+.socialicon-blog:before { content: "\36"; }
+.socialicon-feed:before { content: "\37"; }
+/*----------- END >> Icons -----------*/
+
+/*---------- BEGIN << Common to all Pages ----------*/
+body { background: rgb(242,242,242); color: rgb(32,32,32); font-family: 'Open Sans', sans-serif; font-weight: 400; }
+
+.selectnav { display: none; cursor: pointer; background: rgb(50,50,50); color: rgb(255,255,255); -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; padding: 0.3125em 0.625em; border-style: solid !important; width: 100%; }
+@media screen and (max-width: 37.5em) {
+  .js #nav { display: none; }
+  .js .selectnav { display: block; }
+}
+/*----------- END >> Common to all Pages -----------*/
+
+/*---------- BEGIN << Header ----------*/
+#social-menu { border-bottom: 1px solid rgb(192,192,192); -moz-box-shadow: inset 0 -1px 0 rgb(255,255,255); -webkit-box-shadow: inset 0 -1px 0 rgb(255,255,255); box-shadow: inset 0 -1px 0 rgb(255,255,255); padding: 0.5em 0; }
+
+#nav { list-style-type: none; margin: 0; padding: 0; }
+#nav li { color: inherit; float: left; margin: 0 1em 0 0; padding: 0.34375em 0 0 0; }
+#nav li a { background: rgb(50,50,50); color: rgb(255,255,255); display: inline-block; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; font-size: 1em; font-weight: 600; line-height: 100%; padding: 0.5em; text-shadow: 1px 1px 0 rgb(0,0,0); -moz-transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+#nav li a:hover { background: rgb(248,148,6); text-shadow: 1px 1px 0 rgb(201,133,35); }
+#nav li a i { font-family: 'Social-Icon'; font-size: 1em; font-weight: normal; font-style: normal; text-shadow: 0em 0em; margin-right: 0.5em; }
+
+#social-icons { list-style-type: none; }
+#social-icons li { float: right; margin-left: 0.4em; }
+#social-icons li a { color: rgb(50,50,50); font-family: 'Social-Icon'; font-size: 1.7em; -moz-transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+#social-icons li a:hover { color: rgb(248,148,6); }
+/*----------- END >> Header -----------*/
+
+/*---------- BEGIN << Profile and Page Title ----------*/
+#profile,
+#page-title { background: rgb(217,91,68) url(../img/noise_pattern.png); border-bottom: 1px solid rgb(215,74,48); -moz-box-shadow: inset 0 -1px 0 rgb(216,147,135); -webkit-box-shadow: inset 0 -1px 0 rgb(216,147,135); box-shadow: inset 0 -1px 0 rgb(216,147,135); position: relative; }
+#profile { padding-bottom: 1em; padding-top: 1em; }
+#page-title { padding-bottom: 1.5em; padding-top: 1.5em; }
+
+img.profile-pic { border: 3px solid rgb(255,255,255); -moz-box-shadow: 0 0 5px rgb(167,49,28); -webkit-box-shadow: 0 0 5px rgb(167,49,28); box-shadow: 0 0 5px rgb(167,49,28); -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+#profile-text h1 { color: rgb(255,255,255); font-family: 'Roboto Condensed', sans-serif; font-size: 2em; font-weight: 700; line-height: 100%; text-shadow: 2px 2px 0 rgb(167,49,28); }
+#profile-text h1 small { color: inherit; font-size: 0.60em; font-weight: 400; }
+#profile-text p { color: rgb(255,255,255); font-family: 'Roboto Condensed', sans-serif; font-size: 1.045em; font-weight: 400; margin-bottom: 0; text-shadow: 2px 2px 0 rgb(167,49,28); }
+
+h1.title { color: rgb(255,255,255); font-family: 'Roboto Condensed', sans-serif; font-size: 1.7em; font-weight: 400; line-height: 135%; text-shadow: 2px 2px 0 rgb(167,49,28); margin: 0; padding: 0; }
+h1.title span { text-shadow: 0 0 0 rgb(167,49,28); margin-right: 0.3125em; }
+
+#page-title a.download  { background: rgb(136, 169, 25); border: 1px solid rgb(108,134,18); color: rgb(255,255,255); display: inline-block; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-box-shadow: inset 0 0 3px rgb(163,200,39); -webkit-box-shadow: inset 0 0 3px rgb(163,200,39); box-shadow: inset 0 0 3px rgb(163,200,39); font-size: 1em; font-weight: 600; line-height: 100%; padding: 0.5em 0.6em 0.6em; text-shadow: 1px 1px 0 rgb(108,134,18); -moz-transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+#page-title .smalld { float: right; }
+#page-title a.download:hover { background: rgb(50,50,50); border: 1px solid rgb(0,0,0); -moz-box-shadow: inset 0 0 3px rgb(100,100,100); -webkit-box-shadow: inset 0 0 3px rgb(100,100,100); box-shadow: inset 0 0 3px rgb(100,100,100); text-shadow: 1px 1px 0 rgb(0,0,0); }
+#page-title a.download span { font-family: 'Social-Icon'; font-size: 1em; font-weight: normal; font-style: normal; text-shadow: 0em 0em; margin-right: 0.5em; }
+#page-title a.download span.blabel { color: inherit; font-family: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-shadow: inherit; margin-right: 0; }
+
+@media screen and (max-width: 48em) {
+  h1.title { float: left; }
+}
+@media screen and (max-width: 22.5em) {
+  #page-title a.download span.blabel { display: none; }
+  #page-title a.download span { margin-right: 0; }
+}
+/*----------- END >> Profile and Page Title -----------*/
+
+/*---------- BEGIN << Download Resume ----------*/
+#download { text-align: center; }
+#download a  { background: rgb(136, 169, 25); border: 1px solid rgb(108,134,18); -moz-border-radius: 0px 0px 6px 6px; -webkit-border-radius: 0px 0px 6px 6px; border-radius: 0px 0px 6px 6px; -moz-box-shadow: inset 0 -1px 0 rgb(163,200,39); -webkit-box-shadow: inset 0 -1px 0 rgb(163,200,39); box-shadow: inset 0 -1px 0 rgb(163,200,39); color: rgb(255,255,255); display: inline-block; font-size: 1em; font-weight: 600; line-height: 100%; padding: 0.5em 0.6em 0.6em; text-shadow: 1px 1px 0 rgb(108,134,18); -moz-transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+#download a:hover { background: rgb(50,50,50); border: 1px solid rgb(0,0,0); -moz-box-shadow: inset 0 -1px 0 rgb(100,100,100); -webkit-box-shadow: inset 0 -1px 0 rgb(100,100,100); box-shadow: inset 0 -1px 0 rgb(100,100,100); text-shadow: 1px 1px 0 rgb(0,0,0); }
+#download a span { font-family: 'Social-Icon'; font-size: 1em; font-weight: normal; font-style: normal; text-shadow: 0em 0em; margin-right: 0.5em; }
+/*----------- END >> Download Resume -----------*/
+
+/*---------- BEGIN << Resume ----------*/
+#resume { padding-top: 1em; padding-bottom: 1.5em; }
+#resume h2 { color: rgb(248,148,6); font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 1.5em; text-shadow: 1px 1px 0 rgb(255,255,255); }
+#resume h2 span { color: rgb(100, 100, 100); font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 0.65em; }
+#resume div.position  { background: rgb(255,255,255); border-top: 1px solid rgb(221,221,221); border-left: 1px solid rgb(221,221,221); border-right: 1px solid rgb(221,221,221); -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; border-radius: 6px 6px 0 0; font-family: 'Raleway', sans-serif; padding: 0.75em 1em; }
+#resume div.position h3 { font-family: 'Raleway', sans-serif; font-size: 1em; font-weight: 500; margin: 0 0 0.375em 0; padding: 0; }
+#resume div.position h3 span { color: rgb(136, 169, 25); float: right; font-family: 'Open Sans', sans-serif; font-size: 0.8em; line-height: 200%; font-weight: 400; }
+#resume div.position h3 span strong { color: rgb(100, 100, 100); font-weight: 400; }
+#resume div.position small { color: rgb(100, 100, 100); font-size: 0.9em; }
+#resume div.description { background: rgb(247,247,247); border: 1px solid rgb(221,221,221); -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; font-size: 0.8125em; margin-bottom: 1em; padding: 0.75em 1em 0 1em; }
+#resume div.description ul,
+#resume ul.achievements { list-style-position: inside; padding-left: 0.625em; padding-top: 0.4375em; padding-bottom: 0; }
+#resume ul.achievements { font-size: 0.875em; list-style-position: inside; padding-top: 0.4375em; }
+#resume p.interests { font-size: 0.875em; padding-top: 0.4375em; padding-bottom: 0; }
+#resume h2.achievements { margin: 0; padding-top: 0.5em; }
+#resume h3.skills,
+#resume h3.skills-first { background: rgb(50,50,50); color: rgb(255,255,255); font-family: 'Raleway', sans-serif; font-size: 1em; font-weight: 500; text-shadow: 1px 1px 0 rgb(0,0,0); padding: 0.4em 0.6em; margin: 0; }
+#resume h3.skills-first { border-radius: 6px 6px 0 0; -moz-border-radius: 6px 6px 0 0; -webkit-border-radius: 6px 6px 0 0; }
+#resume div.skills,
+#resume div.skills-last { background: rgb(255,255,255); border: 1px solid rgb(221,221,221); font-size: 0.875em; padding: 0.5em 1em 0 1em; }
+#resume div.skills-last { -moz-border-radius: 0 0 6px 6px; -webkit-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; margin-bottom: 1em; }
+#resume div.skills ul,
+#resume div.skills-last ul { margin-bottom: 0.6em; }
+#resume div.skills li,
+#resume div.skills-last li { margin-bottom: 0.25em; }
+#resume div.skills em,
+#resume div.skills-last em { font-weight: 300; }
+#resume div.skills p,
+#resume div.skills-last p { margin-bottom: 0.6em; }
+/*----------- END >> Resume -----------*/
+
+/*---------- BEGIN << Portfolio ----------*/
+#portfolio { padding-top: 1.5em; padding-bottom: 1.5em; }
+#portfolio .row { margin-bottom: 1em; }
+#portfolio .th { position: relative; overflow: hidden; }
+#portfolio span.ttl { background: rgba(0,0,0,0.7); color: rgb(255,255,255); cursor: pointer; display: block; font-weight: 600; font-size: 0.9em; padding: 1.25em 0; position: absolute; left: 0; bottom: -3.5em; width: 100%; -webkit-transition: all 200ms ease-out; -moz-transition: all 200ms ease-out; -o-transition: all 200ms ease-out; transition: all 200ms ease-out; text-shadow: 1px 1px 0 rgb(0,0,0); text-align: center; white-space: nowrap; }
+#portfolio a.th:hover span.ttl { bottom: 0; }
+#portfolio ul { background: rgb(255,255,255); border: 1px solid rgb(221,221,221); border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; list-style-type: none; }
+#portfolio li { margin-top: 10px; }
+#portfolio h2 { color: rgb(248,148,6); font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 1.5em; text-shadow: 1px 1px 0 rgb(255,255,255); }
+#portfolio .ebay { background: url(../img/ebay_tm_rgb.png) left no-repeat; padding-left: 3.8em; }
+#portfolio .wp { background: url(../img/wordpress.png) left no-repeat; padding-left: 1.5em; }
+#portfolioModal a { margin-bottom: 0px; }
+
+@media screen and (max-width: 37.5em) {
+  #portfolio span.ttl { font-size: 0.8em; }
+}
+/*----------- END >> Portfolio -----------*/
+
+/*---------- BEGIN << Contact ----------*/
+#contactModal,
+#loader,
+#portfolioModal { border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; }
+
+#contact { padding-top: 2.5em; padding-bottom: 2.5em; }
+#contactModal #contact { padding-top: 0; padding-bottom: 0; }
+ul.contactinfo { background: rgb(255,255,255); border: 1px solid rgb(221,221,221); -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; display: block; padding: 1.4em 1.5em; line-height: 100%; list-style-position: inside; margin-bottom: 1em; }
+ul.contactinfo li { font-size: 1em; padding: 0; margin-bottom: 1.3em; }
+ul.contactinfo li:last-child { margin-bottom: 0; }
+ul.contactinfo span { font-size: 1.4em; margin-right: 5px; vertical-align: middle; }
+#contact form { margin-bottom: 0; }
+#contact #contactform {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(221,221,221);
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin-bottom: 0;
+	padding: 0.9375em;
+}
+#contact textarea { height: 10em; }
+#contact #submit { margin-bottom: 0; }
+
+@media screen and (max-width: 50em) {
+	ul.contactinfo { padding: 1em 1em; }
+	ul.contactinfo li { font-size: 0.9em; }
+}
+#contactModal #contact { padding: 0px; }
+#contactModal #contact .large-4,
+#contactModal #contact .large-8 { width: 100%; float: none; }
+#contactModal ul.contactinfo span { font-size: 1.4em; margin-right: 5px; vertical-align: middle; float: left; }
+#contactModal ul.contactinfo { padding: 1.4em 0em 0em 0em; margin-left: 0; margin-top: 0; }
+/*----------- END >> Contact -----------*/
+
+/*---------- BEGIN << Footer ----------*/
+footer { background: rgb(50,50,50); border-top: 1px solid rgb(0,0,0); color: rgb(255,255,255); padding-top: 0.5em; padding-bottom: 0.5em; text-shadow: 1px 1px 0 rgb(0,0,0); }
+footer p { font-size: 0.75em; line-height: 350%; padding: 0; margin: 0; }
+#htmlcss ul { list-style-type: none; }
+#htmlcss ul li { float: right; margin-left: 0.4em; color: rgb(255,255,255); font-family: 'Social-Icon'; font-size: 1.7em; }
+/*----------- END >> Footer -----------*/
+
+/*---------- BEGIN << Lower Than IE9 ----------*/
+.lt-ie9 .row { width: 940px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.lt-ie9 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.lt-ie9 .row.large-collapse .column, 
+.lt-ie9 .row.large-collapse .columns { padding: 0; }
+.lt-ie9 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.lt-ie9 .row .row.large-collapse { margin: 0; }
+
+.lt-ie9 .column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
+.lt-ie9 .column.large-centered,
+.lt-ie9 .columns.large-centered { float: none; margin: 0 auto; }
+
+.lt-ie9 [class*="column"] + [class*="column"]:last-child { float: right; }
+.lt-ie9 [class*="column"] + [class*="column"].end { float: left; }
+
+.lt-ie9 .large-1, 
+.lt-ie9 .row .large-1 { width: 8.33333%; }
+
+.lt-ie9 .large-2, 
+.lt-ie9 .row .large-2 { width: 16.66667%; }
+
+.lt-ie9 .large-3, 
+.lt-ie9 .row .large-3 { width: 25%; }
+
+.lt-ie9 .large-4, 
+.lt-ie9 .row .large-4 { width: 33.33333%; }
+
+.lt-ie9 .large-5, 
+.lt-ie9 .row .large-5 { width: 41.66667%; }
+
+.lt-ie9 .large-6, 
+.lt-ie9 .row .large-6 { width: 50%; }
+
+.lt-ie9 .large-7, 
+.lt-ie9 .row .large-7 { width: 58.33333%; }
+
+.lt-ie9 .large-8, 
+.lt-ie9 .row .large-8 { width: 66.66667%; }
+
+.lt-ie9 .large-9, 
+.lt-ie9 .row .large-9 { width: 75%; }
+
+.lt-ie9 .large-10, 
+.lt-ie9 .row .large-10 { width: 83.33333%; }
+
+.lt-ie9 .large-11, 
+.lt-ie9 .row .large-11 { width: 91.66667%; }
+
+.lt-ie9 .large-12,
+.lt-ie9 .row .large-12 { width: 100%; }
+
+.lt-ie9 .row .large-offset-1 { margin-left: 8.33333%; }
+.lt-ie9 .row .large-offset-2 { margin-left: 16.66667%; }
+.lt-ie9 .row .large-offset-3 { margin-left: 25%; }
+.lt-ie9 .row .large-offset-4 { margin-left: 33.33333%; }
+.lt-ie9 .row .large-offset-5 { margin-left: 41.66667%; }
+.lt-ie9 .row .large-offset-6 { margin-left: 50%; }
+.lt-ie9 .row .large-offset-7 { margin-left: 58.33333%; }
+.lt-ie9 .row .large-offset-8 { margin-left: 66.66667%; }
+.lt-ie9 .row .large-offset-9 { margin-left: 75%; }
+.lt-ie9 .row .large-offset-10 { margin-left: 83.33333%; }
+
+.lt-ie9 .pull-2 { right: 16.66667%; }
+.lt-ie9 .pull-3 { right: 25%; }
+.lt-ie9 .pull-4 { right: 33.33333%; }
+.lt-ie9 .pull-5 { right: 41.66667%; }
+.lt-ie9 .pull-6 { right: 50%; }
+.lt-ie9 .pull-7 { right: 58.33333%; }
+.lt-ie9 .pull-8 { right: 66.66667%; }
+.lt-ie9 .pull-9 { right: 75%; }
+.lt-ie9 .pull-10 { right: 83.33333%; }
+
+.lt-ie9 .push-2 { left: 16.66667%; }
+.lt-ie9 .push-3 { left: 25%; }
+.lt-ie9 .push-4 { left: 33.33333%; }
+.lt-ie9 .push-5 { left: 41.66667%; }
+.lt-ie9 .push-6 { left: 50%; }
+.lt-ie9 .push-7 { left: 58.33333%; }
+.lt-ie9 .push-8 { left: 66.66667%; }
+.lt-ie9 .push-9 { left: 75%; }
+.lt-ie9 .push-10 { left: 83.33333%; }
+
+/* Nicolas Gallagher's micro clearfix */
+.lt-ie9 .row { *zoom: 1; }
+.lt-ie9 .row:before, .row:after { content: " "; display: table; }
+.lt-ie9 .row:after { clear: both; }
+
+/* Custom */
+.lt-ie9 .hide-for-small,
+.lt-ie9 .show-for-medium-up { display: block !important; }
+.lt-ie9 .show-for-small { display: none !important; }
+.lt-ie9 .reveal-modal-bg { background: transparent url(../img/lt-ie9_reveal-modal-bg.png); }
+
+.lt-ie9 #portfolio span.ttl { background: rgb(0,0,0); }
+.lt-ie9 #portfolio ul.large-block-grid-5 { overflow: hidden; padding: 0 0px; width: 940px; max-width: 100%; min-width: 768px; padding-bottom: 5px; }
+.lt-ie9 #portfolio ul.large-block-grid-5 li { float: left; display: inline-block; padding: 0px 10px; }
+.lt-ie9 #portfolio .th { display: inline-block !important; width: 188px; min-width: 152px; max-width: 100%; }
+
+.lt-ie9 #contact .large-8 { background: rgb(255,255,255); border: 1px solid rgb(221,221,221); border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; padding-bottom: 20px; }
+.lt-ie9 ul.contactinfo { margin-top: 0; }
+.lt-ie9 #contact { padding-top: 2.5em; padding-bottom: 2.5em; }
+
+.lt-ie9 #resume h3.skills-first,
+.lt-ie9 #resume div.skills-last,
+.lt-ie9 #nav li a,
+.lt-ie9 img.profile-pic,
+.lt-ie9 #page-title a.download,
+.lt-ie9 #download a,
+.lt-ie9 #resume div.position,
+.lt-ie9 #resume div.description,
+.lt-ie9 #portfolio ul,
+.lt-ie9 ul.contactinfo { behavior: url(js/vendor/pie2/PIE.htc); position: relative; }
+
+.lt-ie9 #portfolio .th,
+.lt-ie9 #contactModal,
+.lt-ie9 #loader,
+.lt-ie9 #portfolioModal,
+.lt-ie9 #contact .large-8 { behavior: url(js/vendor/pie2/PIE.htc); }
+/*----------- END >> Lower Than IE9 -----------*/

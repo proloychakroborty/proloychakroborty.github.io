@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 	var joined = new Date('2013/10/28');
 	var today = new Date();
 	var duration = Math.floor(Math.abs((today - joined) / (1000 * 60 * 60 * 24)));
-	var showDuration, totalYears = 7, totalMonths = 3;
+	var showDuration, totalYears = 7, totalMonths = 6;
 	if(duration >= 365) {
 		var years = Math.floor(duration/365);
 		var months = Math.floor((duration-(365*years))/30);

@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
         var years = Math.floor(duration / 365);
         var months = Math.floor((duration - (365 * years)) / 30);
         if (years == 1) {
-            showDuration = '<strong>(' + year + ' year';
+            showDuration = '<strong>(' + years + ' year';
         } else {
             showDuration = '<strong>(' + years + ' years';
         }
@@ -43,6 +43,11 @@ jQuery(document).ready(function ($) {
 
         totalYears = totalYears + years;
         totalMonths = totalMonths + months;
+        if (totalMonths >= 12) {
+            totalMonths = totalMonths - 12;
+            totalYears = totalYears + 1;
+        }
+        
         $('#total').html('(' + totalYears + ' years, ' + totalMonths + ' months)');
     } else {
         var months = Math.floor(duration / 30);
